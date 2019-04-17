@@ -1,21 +1,38 @@
 ﻿<Properties StartupConfiguration="{2F87286E-929D-B1A2-F27D-429B397C7F82}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Lobby/Scripts/PlayerShipController.cs">
     <Files>
-      <File FileName="Assets/Lobby/Scripts/PlayerShipController.cs" Line="25" Column="3" />
-      <File FileName="Assets/Lobby/Scripts/GameController.cs" Line="67" Column="1" />
-      <File FileName="Assets/Lobby/Scripts/DestroyByTime.cs" Line="19" Column="1" />
-      <File FileName="Assets/Lobby/Scripts/DestroyByContact.cs" Line="48" Column="2" />
-      <File FileName="Assets/Lobby/Scripts/RandomRotator.cs" Line="18" Column="2" />
+      <File FileName="Assets/Lobby/Scripts/custom_ui.cs" Line="48" Column="18" />
       <File FileName="Assets/Lobby/Scripts/DestroyByBoundary.cs" Line="1" Column="1" />
+      <File FileName="Assets/Lobby/Scripts/DestroyByContact.cs" Line="48" Column="2" />
+      <File FileName="Assets/Lobby/Scripts/DestroyByTime.cs" Line="19" Column="1" />
       <File FileName="Assets/Lobby/Scripts/DraggablePanel.cs" Line="1" Column="1" />
       <File FileName="Assets/Lobby/Scripts/EventSystemChecker.cs" Line="1" Column="1" />
+      <File FileName="Assets/Lobby/Scripts/GameController.cs" Line="24" Column="26" />
+      <File FileName="Assets/Lobby/Scripts/Mover.cs" Line="19" Column="1" />
+      <File FileName="Assets/Lobby/Scripts/PlayerShipController.cs" Line="104" Column="1" />
+      <File FileName="Assets/Lobby/Scripts/RandomRotator.cs" Line="18" Column="2" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="space" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Lobby" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="PlayerShipController.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8632cb17-aa3a-4a0a-8839-78894ce12a74" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

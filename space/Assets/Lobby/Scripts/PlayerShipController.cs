@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [System.Serializable]
 public class Boundary
 {
@@ -19,8 +20,9 @@ public class PlayerShipController : MonoBehaviour {
     public GameObject shot;//用来保存子弹的预制件
     public Transform shotSqawn;//用来保存子弹的发射
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -35,10 +37,28 @@ public class PlayerShipController : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        //这是获取鼠标偏移，现在需要改成触屏
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        //float moveHorizontal = Input.GetAxis("Horizontal");
+        //float moveVertical = Input.GetAxis("Vertical");
+
+        //Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+
+
+        Vector3 movement;
+
+        if (Input.touchCount == 1)
+        {
+            Vector2 move = Input.GetTouch(0).deltaPosition;
+            movement = new Vector3(move.x, 0.0f, move.y);
+        }
+        else
+        {
+            float moveHorizontal = Input.GetAxis("Horizontal");
+            float moveVertical = Input.GetAxis("Vertical");
+            movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        }
+
         GetComponent<Rigidbody>().velocity = movement * speed;
 
         GetComponent<Rigidbody>().position = new Vector3(Mathf.Clamp(GetComponent<Rigidbody>().position.x, boundary.xMin, boundary.xMax),
